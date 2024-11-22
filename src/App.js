@@ -1,9 +1,9 @@
-import MovieCard from"./MovieCard"
+import AnimeList from"./AnimeList"
 function App() {
   return (
     <>
     <h1>Movie App</h1>
-    <MovieCard />
+    <AnimeList />
     </>
   );
 }

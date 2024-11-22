@@ -13,13 +13,14 @@ code {
     monospace;
 }
 
-.movies{
+.collection{
   display: flex;
   width: 70%;
   margin: 0 auto;
+  margin-bottom: 2rem;
 }
 
-.moviecard{
+.animecard{
   background-color: #fff;
   display: flex;
   padding: 10px;
@@ -27,29 +28,29 @@ code {
   border-radius: 1.2rem
 }
 
-.moviecard .left img{
-  height: 22rem;
+.animecard .left img{
+  height: 18rem;
   border-radius: 1.2rem;
 }
 
-.moviecard .right{
+.animecard .right{
   position: relative;
   flex: 10;
 }
 
-.moviecard .title{
+.animecard .title{
   font-size: 2rem;
   padding-left: 10px ;
   padding-top: 1rem;
   font-weight: 550;
 }
 
-.moviecard .plot{
+.animecard .plot{
   margin-top: 1.5rem;
   padding-left: 13px;
 }
 
-.moviecard .price{
+.animecard .price{
   font-size: 1.2rem;
   margin-top: 2rem;
   padding-left: 0.8rem;
@@ -115,6 +116,17 @@ code {
   cursor: pointer;
 }
 
+.unfav{
+  background-color: red;
+  color: white;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.unfav:hover{
+  cursor: pointer;
+}
+
 .buy{
   background-color: #3c2ff7;
   color: white;
@@ -123,5 +135,16 @@ code {
   border: none;
 }
 .buy:hover{
+  cursor: pointer;
+}
+
+.remove{
+  background-color: purple;
+  color: white;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.remove:hover{
   cursor: pointer;
 }
