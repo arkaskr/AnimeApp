@@ -1,11 +1,9 @@
-import { Component } from "react";
 import './index.css';
 
-class AnimeCard extends Component {
+function AnimeCard(props){
 
-    render() {
-        const { animedata, addStars, subStars, toggleFav, toggleBuy } = this.props;
-        const { title, plot, poster, price, rating, stars, fav, buy } = this.props.animedata;
+        const { animedata, addStars, subStars, toggleFav, toggleBuy } = props;
+        const { title, plot, poster, price, rating, stars, fav, buy } = props.animedata;
         return (
             <div className="collection">
                 <div className="animecard">
@@ -42,6 +40,5 @@ class AnimeCard extends Component {
         )
 
     }
-}
 
 export default AnimeCard;
