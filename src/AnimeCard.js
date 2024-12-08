@@ -20,8 +20,11 @@ function AnimeCard(props){
                             <div className="stars">
                                 <img className="minus" alt="min" src="https://cdn-icons-png.flaticon.com/128/43/43625.png"
                                     onClick={() => { subStars(animedata) }} />
-                                <span className="starCount">{stars}</span>
-                                <img className="star" alt="s" src="https://cdn-icons-png.flaticon.com/128/1828/1828884.png" />
+
+                                 {[...Array(stars)].map((_, index) => (
+                                <img key={index} className="star" alt="gold-star" src="https://cdn-icons-png.flaticon.com/128/1828/1828884.png" />
+                                  ))}
+
                                 <img className="plus" alt="pls" src="https://cdn-icons-png.flaticon.com/128/1828/1828925.png"
                                     onClick={() => { addStars(animedata) }} />
                             </div>
